@@ -1,0 +1,10 @@
+{
+  "name": "checkers",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "docker build -f Dockerfile . -t checkers_i",
+    "ignite-version": "docker run --rm -it checkers_i ignite version",
+    "bash": "docker exec -ti checkers /bin/bash",
+    "start": "docker-compose up -d"
+  }
+}
